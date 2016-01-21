@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yauhen Dounar](https://htmlacademy.ru/profile/id136309).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кравченко](https://htmlacademy.ru/profile/id13921).
 
 ---
 
