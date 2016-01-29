@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона - добро пожаловать!</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +30,8 @@
       </nav>
     </header>
     <main class="main">
-      <div class="front-page">
-        <img src="img/front-page.png" width="768" height="204" alt="Добро пожаловать в Седону!»">
+      <div class="promo-block">
+        <img src="img/bg-index-main.jpg" width="1200" height="700" alt="Добро пожаловать в Седону!»">
       </div>
       <h2 class="features-name">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -41,7 +42,7 @@
           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="features-picture">
-          <img src="img/sedona-town.jpg" width="250" height="100" alt="Городок Седона"><!--цвет фона как у соседнего блока-->
+          <img src="img/sedona-town.jpg" width="800" height="430" alt="Городок Седона"><!--цвет фона как у соседнего блока-->
         </div>
       </div>
       <div class="features">
@@ -60,7 +61,7 @@
       </div>
       <div class="features">
         <div class="features-picture">
-          <img src="img/sedona-bridge.jpg" width="250" height="100" alt="Мост Дьявола"><!--цвет фона как у соседнего блока-->
+          <img src="img/sedona-bridge.jpg" width="800" height="430" alt="Мост Дьявола"><!--цвет фона как у соседнего блока-->
         </div>
         <div class="features-text">
           <h2 class="features-name">Там есть мост Дьявола</h2>
@@ -102,36 +103,49 @@
       <a class="academy-logo" href="https://htmlacademy.ru">
         <img src="img/htmlacademy-logo.svg" width="150" height="50" alt="website by: htmlacademy">
       </a>
-      <div class="index-form">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="form-title">Поиск гостиницы в Седоне</h3>
-          <div class="form">
-            <label for="date-in">Дата заезда:</label>
-            <input type="text" name="date-in" id="date-in" class="date">
-            <button class="calendar-in">
-              <div><!--сделать иконочным шрифтом--></div>
-            </button>
-
-            <label for="date-out">Дата выезда:</label>
-            <input type="text" name="date-out" id="date-out" class="date">
-            <button class="calendar-out">
-              <div class="calendar"><!--сделать иконочным шрифтом--></div>
-            </button>
-
-            <label for="adults">Взрослые:</label>
-            <i class="minus"></i>
-            <input type="text" name="adults" id="adults" value="2" class="qty">
-            <i class="plus"></i>
-
-            <label for="children">Дети:</label>
-            <i class="minus"></i>
-            <input type="text" name="children" id="children" value="0" class="qty">
-            <i class="plus"></i>
-          </div>
-          <button class="btn-find" type="submit">Найти</button>
-        </form>
-      </div>
     </footer>
+    <div class="index-form">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h3 class="form-title">Поиск гостиницы в Седоне</h3>
+        <div class="form-row">
+          <div class="form-column-left">
+            <label for="date-in">Дата заезда:</label>
+          </div>
+          <div class="form-column-right">
+            <input type="text" name="date-in" id="date-in" class="date" placeholder="24 апреля 2016">
+            <i class="icon-calendar"></i>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-column-left">
+            <label for="date-in">Дата выезда:</label>
+          </div>
+          <div class="form-column-right">
+            <input type="text" name="date-out" id="date-out" class="date" placeholder="4 июля 2016">
+            <i class="icon-calendar"></i>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-column-left">
+            <label for="adults">Взрослые:</label>
+          </div>
+          <div class="form-column-right">
+            <div class="form-counter-left">
+              <i class="icon-minus"></i>
+              <input type="text" name="adults" id="adults" value="2" class="qty">
+              <i class="icon-plus"></i>
+            </div>
+            <label for="children">Дети:</label>
+            <div class="form-counter-right">
+              <i class="icon-minus"></i>
+              <input type="text" name="children" id="children" value="0" class="qty">
+              <i class="icon-plus"></i>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-show">Найти</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>

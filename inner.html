@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Гостиницы - Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
     <main class="main">
       <form action="https://echo.htmlacademy.ru" method="post" class="filter-form">
         <div class="filter-group">
-          <h3 class="filter-title">Инфраструктура:</h3>
+          <h2 class="filter-title">Инфраструктура:</h2>
           <input type="checkbox" name="pool" id="pool-id" class="filter-mark" checked>
           <label for="pool-id">Бассейн</label>
           <input type="checkbox" name="parking" id="parking-id" class="filter-mark">
@@ -40,7 +41,7 @@
           <label for="wifi-id">Wi-Fi</label>
         </div>
         <div class="filter-group">
-          <h3 class="filter-title">Тип жилья:</h3>
+          <h2 class="filter-title">Тип жилья:</h2>
           <input type="checkbox" name="hotel" id="hotel-id" class="filter-mark" checked>
           <label for="hotel-id">Гостиница</label>
           <input type="checkbox" name="motel" id="motel-id" class="filter-mark" checked>
@@ -49,7 +50,7 @@
           <label for="villa-id">Апартаменты</label>
         </div>
         <div class="price-range">
-          <div class="filter-title">Стоимость в сутки:</div>
+          <h2 class="filter-title">Стоимость в сутки:</h2>
           <div class="price-controls">
             <input type="text" name="min-price" value="от 0" class="min-price">
             <input type="text" name="max-price" value="до 3000" class="max-price">
@@ -72,19 +73,19 @@
             <a class="btn-sort" href="#">По типу</a>
           </li>
           <li>
-            <a class="btn-sort" href="#"  >По рейтингу</a>
+            <a class="btn-sort" href="#">По рейтингу</a>
           </li>
         </ul>
         <div class="sort-arrows">
-          <i class="arrow-up"></i>
-          <i class="arrow-down"></i>
+          <i class="icon-up-dir"></i>
+          <i class="icon-down-dir"></i>
         </div>
 
         <!--Карточки отелей-->
 
         <div class="hotel-card">
           <div class="hotel-pic">
-            <img src="img/hotel-1.jpg" width="80" height="50" alt="">
+            <img src="img/amara.jpg" width="135" height="90" alt="">
           </div>
           <a class="hotel-name" href="#">Amara resort & Spa</a>
           <div class="hotel-info">
@@ -105,7 +106,7 @@
 
         <div class="hotel-card">
           <div class="hotel-pic">
-            <img src="img/hotel-1.jpg" width="80" height="50" alt="">
+            <img src="img/desert-quail.jpg" width="135" height="90" alt="">
           </div>
           <a class="hotel-name" href="#">Desert Quail Inn</a>
           <div class="hotel-info">
@@ -126,7 +127,7 @@
 
         <div class="hotel-card">
           <div class="hotel-pic">
-            <img src="img/hotel-1.jpg" width="80" height="50" alt="">
+            <img src="img/poco-diablo.jpg" width="135" height="90" alt="">
           </div>
           <a class="hotel-name" href="#">Villas at Poco Diablo</a>
           <div class="hotel-info">
@@ -144,21 +145,22 @@
             <div class="rating">Рейтинг: 9,2</div>
           </div>
         </div>
+
+        <footer class="main-footer">
+          <div class="container">
+            <a href="#" class="link">#visitsedona</a>
+            <section class="footer-social">
+              <a class="social-btn social-btn-tw" href="#">Twitter</a>
+              <a class="social-btn social-btn-fb" href="#">Facebook</a>
+              <a class="social-btn social-btn-yt" href="#">YouTube</a>
+            </section>
+            <a class="academy-logo" href="https://htmlacademy.ru">
+              <img src="img/htmlacademy-logo.svg" width="150" height="50" alt="website by: htmlacademy">
+            </a>
+          </div>
+        </footer>
       </div>
     </main>
-    <footer class="main-footer">
-    <div class="container">
-      <a href="#" class="link">#visitsedona</a>
-      <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-yt" href="#">YouTube</a>
-      </section>
-      <a class="academy-logo" href="https://htmlacademy.ru">
-        <img src="img/htmlacademy-logo.svg" width="150" height="50" alt="website by: htmlacademy">
-      </a>
-    </div>
-  </footer>
   </div>
 </body>
 </html>
