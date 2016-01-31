@@ -4,6 +4,114 @@ body {
   font-weight: normal;
   line-height: 21px;
   color: #333333;
+  background-color: #f2f2f2;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1200px;/*сделать резину*/
+  min-width: 768px; /*сделать резину*/
+  margin: 0 auto;
+  outline: 1px dashed #21ff64;
+  /*box-shadow: 0 0 19px 10px #dbdbdb;*/
+}
+
+.main-header {
+  min-height: 56px;
+  font-size: 0;
+  outline: 1px dashed #410f64;
+}
+
+.main-header li {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20%;
+  padding: 18px 5%;
+  font-size: 14px;
+  outline: 1px dashed #21ff64;
+}
+
+.main-header li:nth-child(2) {
+  margin-right: 20%;
+}
+
+.main-header li:nth-child(3),
+.main-header li:nth-child(4) {
+  text-align: right;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+}
+
+.main {
+  /*карта на первой странице должна залезть под футер*/
+  /*margin-bottom: -120px;*/
+}
+
+.promo-block {
+  width: 500px;
+  margin: 0 auto 135px;
+  padding-top: 76px;
+  text-align: center;
+  background: url("img/bg-index-main.jpg") no-repeat; /*не работает*/
+  outline: 1px dashed #ff8e44;
+}
+
+.features-name {
+  text-align: center;
+}
+
+.features-name+p {
+  text-align: center;
+  margin-bottom: 53px;
+}
+
+.features {
+  outline: 1px dashed #4fa2ff;
+}
+
+.features-item {
+  box-sizing: border-box;
+  float: left;
+  width: 33.333%;
+  min-height: 330px;
+  padding: 50px 5% 0;
+  text-align: center;
+}
+
+.features-text {
+  box-sizing: border-box;
+  float: left;
+  width: 33.333%;
+  padding: 50px 5% 0;
+  min-height: 256px;
+  text-align: center;
+}
+
+.features-picture {
+  float: left;
+  width: 66.666%;
+}
+
+.interesting {
+  clear: both;
+  min-height: 291px;
+  padding-top: 55px;
+  text-align: center;
+  outline: 2px dotted #52ff3c;
+}
+
+.map {
+  width: 100%; /*не работает*/
+  /*z-index: -10;*/
+  margin: 0 auto;
 }
 
 .features-name {
@@ -17,3 +125,119 @@ body {
   font-weight: bold;
   color: #ffffff;
 }
+
+.main-footer {
+  outline: 3px dashed #ff621d;
+}
+
+.hashtag,
+.footer-social,
+.academy-logo {
+  float: left;
+  width: 33.333%;
+  min-height: 50px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
+  outline: 1px dotted #5a954f;
+}
+
+.index-form {
+  width: 568px;
+  margin: 0 auto;
+}
+
+.form-row {
+  padding: 30px 55px;
+  outline: 1px solid gold;
+}
+
+.form-column-left {
+  box-sizing: border-box;
+  float: left;
+  width: 110px;
+}
+
+.form-column-right {
+  float: right;
+  width: 346px;
+}
+
+.date {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*inner page*/
+.filter-group {
+  float: left;
+  width: 241px;
+}
+
+.price-range {
+  float: right;
+  width: 328px;
+}
+
+.result-header {
+  padding-top: 33px;
+  padding-bottom: 35px;
+  margin-bottom: 1px;
+  background-color: #fefefe;
+}
+
+.found {
+  float: left;
+  width: 164px;
+  outline: 1px dotted #5a59ff;
+}
+
+.sorting-title {
+  float: left;
+  width: 115px;
+  outline: 1px dotted #5a954f;
+}
+
+.sort li {
+  float: left;
+  width: 80px;
+  outline: 1px dotted #5a59ff;
+}
+
+.sort-arrows {
+  float: right;
+  width: 150px;
+  outline: 1px dotted #5a954f;
+}
+
+.hotel-card {
+  min-height: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 1px;
+  background-color: #fefefe;
+ }
+
+.hotel-pic {
+  float: left;
+  width: 135px;
+  margin-right: 30px;
+}
+
+.hotel-info-left {
+  float: left;
+  width: 110px;
+  margin-right: 8px;
+}
+
+.hotel-info-right {
+  float: left;
+  width: 142px;
+}
+
+.rating-box {
+  float: right;
+  width: 160px;
+  outline: 1px dotted chocolate;
+}
+
