@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Седона - добро пожаловать!</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -33,11 +35,11 @@
       <div class="promo-block">
         <img src="img/welcome-text.png" width="458" height="352" alt="Добро пожаловать в Седону!»">
       </div>
-      <h2 class="features-name">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
+      <h2 class="features-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="features clearfix">
         <div class="features-text">
-          <h2 class="features-name">Настоящий городок</h2>
+          <h2 class="features-name">Настоящий<br>городок</h2>
           <span class="features-number">- №1 -</span>
           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
@@ -64,23 +66,23 @@
           <img src="img/sedona-bridge.jpg" width="800" height="430" alt="Мост Дьявола"><!--цвет фона как у соседнего блока-->
         </div>
         <div class="features-text">
-          <h2 class="features-name">Там есть мост Дьявола</h2>
+          <h2 class="features-name">Там есть<br>мост Дьявола</h2>
           <span class="features-number">- №2 -</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p>Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
         </div>
       </div>
-      <div class="features features-text">
-        <h2 class="features-name">Небольшая площадь</h2>
+      <div class="features features-text features-last-row">
+        <h2 class="features-name">Небольшая<br>площадь</h2>
         <span class="features-number">- №3 -</span>
         <p>Все достопримечательности находятся очень близко</p>
       </div>
-      <div class="features features-text">
-        <h2 class="features-name">Красивая дорога</h2>
+      <div class="features features-text features-last-row">
+        <h2 class="features-name">Красивая<br>дорога</h2>
         <span class="features-number">- №4 -</span>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
-      <div class="features features-text">
-        <h2 class="features-name">Мало туристов</h2>
+      <div class="features features-text features-last-row">
+        <h2 class="features-name">Мало<br>туристов</h2>
         <span class="features-number">- №5 -</span>
         <p>Большинство едет в гранд Каньон и толпится там</p>
       </div>
@@ -88,47 +90,49 @@
         <h2 class="interesting-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <div class="map">
-        <img src="img/map.jpg" width="768" height="450" alt="">
-      </div>
     </main>
     <footer class="main-footer clearfix">
-      <a href="#" class="hashtag">#visitsedona</a>
-      <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-yt" href="#">YouTube</a>
-      </section>
-      <a class="academy-logo" href="https://htmlacademy.ru">
-        <img src="img/htmlacademy-logo.svg" width="150" height="50" alt="website by: htmlacademy">
-      </a>
+      <div class="map"></div>
+      <div class="footer-wrap">
+        <a href="#" class="hashtag">#visitsedona</a>
+        <section class="footer-social">
+          <a class="social-btn" href="#">Twitter<span class="icon-twitter"></span></a>
+          <a class="social-btn" href="#">Facebook<span class="icon-facebook"></span></a>
+          <a class="social-btn" href="#">YouTube<span class="icon-youtube"></span></a>
+        </section>
+        <div class="author">
+          Website by
+          <a class="academy-logo" href="https://htmlacademy.ru"></a>
+        </div>
+      </div>
     </footer>
+    <!--форма заказа гостиницы-->
     <div class="index-form">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h3 class="form-title">Поиск гостиницы в Седоне</h3>
         <div class="form-row">
-          <div class="form-column-left">
+          <div class="form-column-left clearfix">
             <label for="date-in">Дата заезда:</label>
           </div>
-          <div class="form-column-right">
+          <div class="form-column-right clearfix">
             <input type="text" name="date-in" id="date-in" class="date" placeholder="24 апреля 2016">
             <i class="icon-calendar"></i>
           </div>
         </div>
         <div class="form-row">
-          <div class="form-column-left">
+          <div class="form-column-left clearfix">
             <label for="date-in">Дата выезда:</label>
           </div>
-          <div class="form-column-right">
+          <div class="form-column-right clearfix">
             <input type="text" name="date-out" id="date-out" class="date" placeholder="4 июля 2016">
             <i class="icon-calendar"></i>
           </div>
         </div>
         <div class="form-row">
-          <div class="form-column-left">
+          <div class="form-column-left clearfix">
             <label for="adults">Взрослые:</label>
           </div>
-          <div class="form-column-right">
+          <div class="form-column-right clearfix">
             <div class="form-counter-left">
               <i class="icon-minus"></i>
               <input type="text" name="adults" id="adults" value="2" class="qty">
@@ -142,9 +146,15 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-show">Найти</button>
+        <button type="submit" class="btn btn-find">Найти</button>
       </form>
     </div>
   </div>
 </body>
 </html>
+
+
+<!--<a class="academy-logo" href="https://htmlacademy.ru">-->
+  <!--<span class=""-->
+  <!--<img src="img/htmlacademy-logo.svg" width="150" height="50" alt="website by: htmlacademy">-->
+<!--</a>-->
