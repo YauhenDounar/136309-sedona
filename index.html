@@ -36,29 +36,29 @@
         <img src="img/welcome-text.png" width="458" height="352" alt="Добро пожаловать в Седону!»">
       </div>
       <h2 class="features-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <p class="features-title-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="features clearfix">
         <div class="features-text">
           <h2 class="features-name">Настоящий<br>городок</h2>
           <span class="features-number">- №1 -</span>
-          <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+          <p class="features-paragraph">Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="features-picture">
           <img src="img/sedona-town.jpg" width="800" height="430" alt="Городок Седона"><!--цвет фона как у соседнего блока-->
         </div>
       </div>
-      <div class="features clearfix">
+      <div class="features clearfix bg-white">
         <div class="features-item">
           <h2 class="features-name">Жилье</h2>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="features-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="features-item">
           <h2 class="features-name">Еда</h2>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <p class="features-paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="features-item">
           <h2 class="features-name">Сувениры</h2>
-          <p>Не только китайского, но и местного производства!</p>
+          <p class="features-paragraph">Не только китайского,<br>но и местного производства!</p>
         </div>
       </div>
       <div class="features clearfix">
@@ -68,86 +68,92 @@
         <div class="features-text">
           <h2 class="features-name">Там есть<br>мост Дьявола</h2>
           <span class="features-number">- №2 -</span>
-          <p>Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
+          <p class="features-paragraph">Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
         </div>
       </div>
-      <div class="features features-text features-last-row">
-        <h2 class="features-name">Небольшая<br>площадь</h2>
-        <span class="features-number">- №3 -</span>
-        <p>Все достопримечательности находятся очень близко</p>
-      </div>
-      <div class="features features-text features-last-row">
-        <h2 class="features-name">Красивая<br>дорога</h2>
-        <span class="features-number">- №4 -</span>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
-      <div class="features features-text features-last-row">
-        <h2 class="features-name">Мало<br>туристов</h2>
-        <span class="features-number">- №5 -</span>
-        <p>Большинство едет в гранд Каньон и толпится там</p>
+      <div class="features clearfix bg-gray">
+        <div class="features features-text features-last-row">
+          <h2 class="features-name">Небольшая<br>площадь</h2>
+          <span class="features-number">- №3 -</span>
+          <p class="features-paragraph">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="features features-text features-last-row">
+          <h2 class="features-name">Красивая<br>дорога</h2>
+          <span class="features-number">- №4 -</span>
+          <p class="features-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="features features-text features-last-row">
+          <h2 class="features-name">Мало<br>туристов</h2>
+          <span class="features-number">- №5 -</span>
+          <p class="features-paragraph">Большинство едет в гранд Каньон и толпится там</p>
+        </div>
       </div>
       <div class="interesting">
         <h2 class="interesting-title">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="interesting-paragraph">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button" class="form-open-btn">Поиск гостиницы в Седоне</button>
       </div>
     </main>
     <footer class="main-footer clearfix">
       <div class="map"></div>
       <div class="footer-wrap">
-        <a href="#" class="hashtag">#visitsedona</a>
+        <div class="hashtag">
+          <a href="#">#visitsedona</a>
+        </div>
         <section class="footer-social">
           <a class="social-btn" href="#">Twitter<span class="icon-twitter"></span></a>
           <a class="social-btn" href="#">Facebook<span class="icon-facebook"></span></a>
           <a class="social-btn" href="#">YouTube<span class="icon-youtube"></span></a>
         </section>
-        <div class="author">
+        <div class="copyright">
           Website by
           <a class="academy-logo" href="https://htmlacademy.ru"></a>
         </div>
       </div>
+      <!--форма заказа гостиницы-->
+      <div class="index-form">
+        <form action="https://echo.htmlacademy.ru" method="post">
+
+          <div class="form-row clearfix">
+            <div class="form-column-left">
+              <label for="date-in">Дата заезда:</label>
+            </div>
+            <div class="form-column-right">
+              <input type="text" name="date-in" id="date-in" class="date" placeholder="24 апреля 2016">
+              <i class="icon-calendar"></i>
+            </div>
+          </div>
+          <div class="form-row clearfix">
+            <div class="form-column-left">
+              <label for="date-in">Дата выезда:</label>
+            </div>
+            <div class="form-column-right">
+              <input type="text" name="date-out" id="date-out" class="date" placeholder="4 июля 2016">
+              <i class="icon-calendar"></i>
+            </div>
+          </div>
+          <div class="form-row clearfix">
+            <div class="form-column-left">
+              <label for="adults">Взрослые:</label>
+            </div>
+            <div class="form-column-right clearfix">
+              <div class="form-counter-left">
+                <i class="icon-minus"></i>
+                <input type="text" name="adults" id="adults" value="2" class="qty">
+                <i class="icon-plus"></i>
+              </div>
+              <label for="children">Дети:</label>
+              <div class="form-counter-right">
+                <i class="icon-minus"></i>
+                <input type="text" name="children" id="children" value="0" class="qty">
+                <i class="icon-plus"></i>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-find">Найти</button>
+        </form>
     </footer>
-    <!--форма заказа гостиницы-->
-    <div class="index-form">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <h3 class="form-title">Поиск гостиницы в Седоне</h3>
-        <div class="form-row">
-          <div class="form-column-left clearfix">
-            <label for="date-in">Дата заезда:</label>
-          </div>
-          <div class="form-column-right clearfix">
-            <input type="text" name="date-in" id="date-in" class="date" placeholder="24 апреля 2016">
-            <i class="icon-calendar"></i>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-column-left clearfix">
-            <label for="date-in">Дата выезда:</label>
-          </div>
-          <div class="form-column-right clearfix">
-            <input type="text" name="date-out" id="date-out" class="date" placeholder="4 июля 2016">
-            <i class="icon-calendar"></i>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-column-left clearfix">
-            <label for="adults">Взрослые:</label>
-          </div>
-          <div class="form-column-right clearfix">
-            <div class="form-counter-left">
-              <i class="icon-minus"></i>
-              <input type="text" name="adults" id="adults" value="2" class="qty">
-              <i class="icon-plus"></i>
-            </div>
-            <label for="children">Дети:</label>
-            <div class="form-counter-right">
-              <i class="icon-minus"></i>
-              <input type="text" name="children" id="children" value="0" class="qty">
-              <i class="icon-plus"></i>
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-find">Найти</button>
-      </form>
+
     </div>
   </div>
 </body>
