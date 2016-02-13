@@ -13,7 +13,7 @@
     <header class="main-header">
       <div class="logo">
         <a href="index.html">
-          <img src="img/logo.png" alt="City of Sedona">
+          <img src="img/logo.png" width="138" height="70" alt="City of Sedona">
         </a>
       </div>
       <nav class="main-navigation">
@@ -28,7 +28,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li class="active-page">
-            Гостиницы
+            <span>Гостиницы</span>
           </li>
         </ul>
       </nav>
@@ -56,12 +56,16 @@
         <div class="price-range">
           <h2 class="filter-title">Стоимость в сутки (р):</h2>
           <div class="price-controls">
-            <input type="text" name="min-price" value="от 0" class="min-price">
-            <input type="text" name="max-price" value="до 3000" class="max-price">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
           </div>
-          <div class="scale"></div>
-          <div class="toggle min-toggle"></div>
-          <div class="toggle max-toggle"></div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
           <button class="btn btn-show" type="submit">Показать</button>
         </div>
       </form>
@@ -83,7 +87,7 @@
           </ul>
           <div class="sort-arrows">
             <i class="icon-up-dir"></i>
-            <i class="icon-down-dir"></i>
+            <i class="icon-down-dir active"></i>
           </div>
         </div>
 
@@ -105,7 +109,7 @@
             </div>
           </div>
           <div class="rating-box">
-            <i class="stars"></i>
+            <i class="stars star-4"></i>
             <div class="rating">Рейтинг: 8,5</div>
           </div>
         </div>
@@ -126,7 +130,7 @@
             </div>
           </div>
           <div class="rating-box">
-            <i class="stars"></i>
+            <i class="stars star-2"></i>
             <div class="rating">Рейтинг: 8,9</div>
           </div>
         </div>
@@ -147,7 +151,7 @@
             </div>
           </div>
           <div class="rating-box">
-            <i class="stars"></i>
+            <i class="stars star-3"></i>
             <div class="rating">Рейтинг: 9,2</div>
           </div>
         </div>
@@ -155,7 +159,7 @@
       </div> <!--search-result-->
     </main>
     <footer class="inner-footer clearfix">
-      <div class="hashtag">
+      <div class="footer-hashtag">
         <a href="#">#visitsedona</a>
       </div>
       <section class="footer-social">
@@ -163,7 +167,7 @@
         <a class="social-btn" href="#">Facebook<span class="icon-facebook"></span></a>
         <a class="social-btn" href="#">YouTube<span class="icon-youtube"></span></a>
       </section>
-      <div class="copyright">
+      <div class="footer-copyright">
         Website by
         <a class="academy-logo" href="https://htmlacademy.ru"></a>
       </div>

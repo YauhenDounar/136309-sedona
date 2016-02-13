@@ -12,7 +12,7 @@
   <div class="container">
     <header class="main-header">
       <div class="logo">
-        <img src="img/logo.png" alt="City of Sedona">
+        <img src="img/logo.png" width="138" height="70" alt="City of Sedona">
       </div>
       <nav class="main-navigation">
         <ul>
@@ -26,7 +26,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a href="inner.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -35,8 +35,8 @@
       <div class="promo-block">
         <img src="img/welcome-text.png" width="458" height="352" alt="Добро пожаловать в Седону!»">
       </div>
-      <h2 class="features-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего</h2>
-      <p class="features-title-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <h2 class="main-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего</h2>
+      <p class="main-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="features clearfix">
         <div class="features-text">
           <h2 class="features-name">Настоящий<br>городок</h2>
@@ -47,7 +47,7 @@
           <img src="img/sedona-town.jpg" width="800" height="430" alt="Городок Седона"><!--цвет фона как у соседнего блока-->
         </div>
       </div>
-      <div class="features clearfix bg-white">
+      <div class="features clearfix features-bg-white">
         <div class="features-item">
           <h2 class="features-name">Жилье</h2>
           <p class="features-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -71,7 +71,7 @@
           <p class="features-paragraph">Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
         </div>
       </div>
-      <div class="features clearfix bg-gray">
+      <div class="features clearfix features-bg-gray">
         <div class="features features-text features-last-row">
           <h2 class="features-name">Небольшая<br>площадь</h2>
           <span class="features-number">- №3 -</span>
@@ -97,7 +97,7 @@
     <footer class="main-footer clearfix">
       <div class="map"></div>
       <div class="footer-wrap">
-        <div class="hashtag">
+        <div class="footer-hashtag">
           <a href="#">#visitsedona</a>
         </div>
         <section class="footer-social">
@@ -105,15 +105,14 @@
           <a class="social-btn" href="#">Facebook<span class="icon-facebook"></span></a>
           <a class="social-btn" href="#">YouTube<span class="icon-youtube"></span></a>
         </section>
-        <div class="copyright">
+        <div class="footer-copyright">
           Website by
           <a class="academy-logo" href="https://htmlacademy.ru"></a>
         </div>
       </div>
-      <!--форма заказа гостиницы-->
-      <div class="index-form">
+      <!--форма поиска гостиницы-->
+      <div class="hotels-form">
         <form action="https://echo.htmlacademy.ru" method="post">
-
           <div class="form-row clearfix">
             <div class="form-column-left">
               <label for="date-in">Дата заезда:</label>
@@ -139,28 +138,23 @@
             <div class="form-column-right clearfix">
               <div class="form-counter-left">
                 <i class="icon-minus"></i>
-                <input type="text" name="adults" id="adults" value="2" class="qty">
+                <input type="text" name="adults" id="adults" value="2" class="quantity">
                 <i class="icon-plus"></i>
               </div>
               <label for="children">Дети:</label>
               <div class="form-counter-right">
                 <i class="icon-minus"></i>
-                <input type="text" name="children" id="children" value="0" class="qty">
+                <input type="text" name="children" id="children" value="0" class="quantity">
                 <i class="icon-plus"></i>
               </div>
             </div>
           </div>
           <button type="submit" class="btn btn-find">Найти</button>
         </form>
+      </div>
     </footer>
 
-    </div>
+
   </div>
 </body>
 </html>
-
-
-<!--<a class="academy-logo" href="https://htmlacademy.ru">-->
-  <!--<span class=""-->
-  <!--<img src="img/htmlacademy-logo.svg" width="150" height="50" alt="website by: htmlacademy">-->
-<!--</a>-->
