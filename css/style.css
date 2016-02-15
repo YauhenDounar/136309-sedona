@@ -53,8 +53,8 @@ body {
 /*конец иконочного шрифта*/
 
 img {
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;*/
+  /*height: auto;*/
 }
 
 .clearfix::after {
@@ -107,7 +107,7 @@ img {
 
 .main-navigation a {
   display: block;
-  margin: 18px 25% 19px;
+  margin: 18px 0 19px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
@@ -132,10 +132,10 @@ img {
   padding-top: 76px;
   text-align: center;
   background:
-    url("../img/arrow-mask.png") no-repeat 0 1px,
-    url("../img/bg-index-main.jpg") no-repeat 0 -85px;
+    url("../img/arrow-mask.png") no-repeat 0 0,
+    url("../img/bg-index-main.jpg") no-repeat 0 -28%;
   background-size: 100%, cover;
-  background-position: 0 100%, 0 -81px;
+  background-position: 0 100%, 0 0;
 }
 
 .main-title {
@@ -243,9 +243,17 @@ img {
 
 .features-picture img {
   position: absolute;
-  top: -93px;
+  top: -30%;
+}
+
+.features-picture-right img {
   left: 0;
 }
+
+.features-picture-left img {
+  right: 0;
+}
+
 
 .features-last-row {
   padding: 47px 5% 0;
@@ -294,6 +302,7 @@ img {
   text-transform: uppercase;
   background: #766357;
   color: #ffffff;
+  outline:none;
 }
 
 .main-footer {
@@ -310,16 +319,24 @@ img {
   background-size: cover;
 }
 
-.modal-content-map {
-  display: none;
+/*.modal-content-map {*/
+  /*display: none;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+/*}*/
+
+/*.modal-content-show {*/
+  /*display: block;*/
+/*}*/
+
+.map-interactive {
+  /*width="1200";*/
+  /*height="593";*/
+  frameborder: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
-
-.modal-content-show {
-  display: block;
-}
-
 
 .footer-wrap {
   position: absolute;
@@ -475,15 +492,29 @@ img {
   100% { opacity: 1; }
 }
 
-/*.hotels-form-error {*/
-/*animation: shake 0.6s;*/
-/*}*/
+.hotels-form-error {
+-webkit-animation: shake 0.6s;
+     -o-animation: shake 0.6s;
+        animation: shake 0.6s;
+}
 
-/*@keyframes shake {*/
-  /*0%, 100%                { transform: translateX(0);     }*/
-  /*10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }*/
-  /*20%, 40%, 60%, 80%      { transform: translateX(10px);  }*/
-/*}*/
+@-webkit-keyframes shake {
+  0%, 100%                { -webkit-transform: translateX(0); transform: translateX(0);     }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { -webkit-transform: translateX(10px); transform: translateX(10px);  }
+}
+
+@-o-keyframes shake {
+  0%, 100%                { -o-transform: translateX(0); transform: translateX(0);     }
+  10%, 30%, 50%, 70%, 90% { -o-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { -o-transform: translateX(10px); transform: translateX(10px);  }
+}
+
+@keyframes shake {
+  0%, 100%                { -webkit-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0);     }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -o-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { -webkit-transform: translateX(10px); -o-transform: translateX(10px); transform: translateX(10px);  }
+}
 
 .form-row {
   padding: 0 55px;
@@ -611,6 +642,7 @@ img {
   color: #ffffff;
   background: #81b3d2;
   border:none;
+  outline:none;
 }
 
 .btn:hover {
@@ -620,6 +652,7 @@ img {
 .btn:active {
   color: #94b9d2;
   background: #5496bd;
+  outline:none;
 }
 
 .btn-find {
@@ -638,7 +671,7 @@ img {
 .active-page {
   margin: 17px auto;
   color: #766357;
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 .active-page:hover {
@@ -752,6 +785,7 @@ img {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 27%;
+  line-height: 28px;
   padding-left: 20%;
 }
 
@@ -841,16 +875,16 @@ img {
 
 .sort-title {
   float: left;
-  padding-top: 2px;
-  width: 115px;
+  margin-top: 2px;
+  margin-right: 40px;
   font-size: 12px;
 }
 
 .sort-by {
   float: left;
   margin: 0;
+  margin-top: 2px;
   padding: 0;
-  width: 290px;
   font-size: 0;
 }
 
@@ -902,6 +936,9 @@ img {
 .icon-down-dir {
   top: 0;
   left: 27px;
+}
+.icon-down-dir.active:before {
+  color: #81b3d2;
 }
 
 .icon-up-dir:hover,
