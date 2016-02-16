@@ -52,10 +52,6 @@ body {
 .icon-youtube::before { content: "\f39e"; } /* "" */
 /*конец иконочного шрифта*/
 
-img {
-  /*max-width: 100%;*/
-  /*height: auto;*/
-}
 
 .clearfix::after {
   content: "";
@@ -73,6 +69,7 @@ img {
 
 .main-header {
   min-height: 55px;
+  padding: 0 6%;
   font-size: 0;
   background-color: #fefefe;
 }
@@ -96,13 +93,18 @@ img {
   display: inline-block;
   vertical-align: top;
   width: 20%;
-  text-align: center;
+  text-align: right;
   font-size: 14px;
   font-weight: bold;
 }
 
+.main-navigation li:nth-child(1) {
+  text-align: left;
+}
+
 .main-navigation li:nth-child(2) {
   margin-right: 20%;
+  text-align: left;
 }
 
 .main-navigation a {
@@ -133,7 +135,7 @@ img {
   text-align: center;
   background:
     url("../img/arrow-mask.png") no-repeat 0 0,
-    url("../img/bg-index-main.jpg") no-repeat 0 -28%;
+    #dbe9f2 url("../img/bg-index-main.jpg") no-repeat 0 -28%;
   background-size: 100%, cover;
   background-position: 0 100%, 0 0;
 }
@@ -141,7 +143,6 @@ img {
 .main-title {
   margin: 0;
   margin-bottom: 30px;
-  padding: 0 6%;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
@@ -292,17 +293,19 @@ img {
 }
 
 .form-open-btn {
+  display: block;
   width: 568px;
+  margin: 0 auto;
   padding: 28px 0 30px;
   border: none;
   font-size: 21px;
   font-weight: bold;
   line-height: 29px;
-  text-align: center;
+  /*text-align: center;*/
+  text-decoration: none;
   text-transform: uppercase;
   background: #766357;
   color: #ffffff;
-  outline:none;
 }
 
 .main-footer {
@@ -684,7 +687,7 @@ img {
 
 .filter-form {
   padding: 28px 6% 6px;
-  background: url("../img/bg-inner.jpg") no-repeat 0 -290px;
+  background: #6e91b2 url("../img/bg-inner.jpg") no-repeat 0 -290px;
   background-size: cover;
 }
 
@@ -741,7 +744,7 @@ img {
 
 .price-range {
   float: right;
-  width: 30%;
+  width: 33%;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -753,6 +756,7 @@ img {
 .price-controls {
   position: relative;
   height: 32px;
+  /*width: 100%;*/
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   -webkit-border-radius: 2px;
@@ -784,9 +788,9 @@ img {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 27%;
+  width: 35%;
   line-height: 28px;
-  padding-left: 20%;
+  padding-left: 15%;
 }
 
 .price-controls input {
@@ -918,7 +922,6 @@ img {
   width: 50px;
   height: 25px;
   text-align: right;
-  cursor: pointer;
 }
 
 .icon-up-dir,
@@ -926,6 +929,13 @@ img {
   position: absolute;
   font-size: 23px;
   color: #cccccc;
+  cursor: pointer;
+}
+
+.icon-up-dir.active,
+.icon-down-dir.active {
+  color: #81b3d2;
+  pointer-events: none;
 }
 
 .icon-up-dir {
@@ -936,9 +946,6 @@ img {
 .icon-down-dir {
   top: 0;
   left: 27px;
-}
-.icon-down-dir.active:before {
-  color: #81b3d2;
 }
 
 .icon-up-dir:hover,
@@ -961,6 +968,15 @@ img {
   float: left;
   width: 135px;
   margin-right: 30px;
+}
+
+.hotel-pic img {
+  display: block;
+}
+
+.hotel-card-middle {
+  float: left;
+  width: 55%;
 }
 
 .hotel-name {
@@ -1018,7 +1034,7 @@ img {
 .rating-box .stars {
   position: relative;
   display: block;
-  margin-bottom: 27px;
+  margin-bottom: 48px;
   height: 15px;
   width: 100%;
 }
@@ -1026,7 +1042,7 @@ img {
 .star-1:after {
   content: "\2605";
   position: absolute;
-  top: -25px;
+  top: -3px;
   right: 0;
   color: #81b3d2;
   font-size: 19px;
@@ -1038,7 +1054,7 @@ img {
 .star-2:after {
   content: "\2605  \2605";
   position: absolute;
-  top: -25px;
+  top: -3px;
   right: 0;
   color: #81b3d2;
   font-size: 19px;
@@ -1050,7 +1066,7 @@ img {
 .star-3:after {
   content: "\2605  \2605  \2605";
   position: absolute;
-  top: -25px;
+  top: -3px;
   right: 0;
   color: #81b3d2;
   font-size: 19px;
@@ -1062,7 +1078,7 @@ img {
 .star-4:after {
   content: "\2605  \2605  \2605  \2605";
   position: absolute;
-  top: -25px;
+  top: -3px;
   right: 0;
   color: #81b3d2;
   font-size: 19px;
@@ -1074,7 +1090,7 @@ img {
 .star-5:after {
   content: "\2605  \2605  \2605  \2605  \2605";
   position: absolute;
-  top: -25px;
+  top: -3px;
   right: 0;
   color: #81b3d2;
   font-size: 19px;
